@@ -1,0 +1,182 @@
+*{
+    transition: all ease 0.5s;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+
+:root{
+    --bg_color: #fff;
+    --main_color: #202C36;
+    --text-color : #000;
+    --btn-color : #fff
+}
+
+.bg-dark{
+    --text-color : #fff;
+}
+
+.color-white{
+    --btn-color : #fff;
+}
+
+.div{
+    --color-div : (var(--main_color))
+}
+
+.title{
+    color: var(--text-color);
+    font-family: "Nunito Sans"; 
+    font-weight: 800;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32,74px;
+}
+
+.btn-changer{
+    color: var(--text-color);
+}
+ 
+header{
+    background-color: #fff;
+    align-items: center;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.0294384);
+}
+
+.col-12{
+    padding: 20px 0;
+}
+
+.header-dark{
+    --header-dark : #fff
+}
+
+.oy-img{
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+.oy-path{
+    fill: #fff;
+    stroke: black;
+}
+
+.search{
+    padding-left: 30px;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.item{
+    width: 295px;
+    margin-right: 30px;
+    padding: 0;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.0294384);
+    border-radius: 5px;
+}
+
+.item:nth-child(4){
+    margin-right: 0;
+}
+.item:nth-child(8){
+    margin-right: 0;
+}
+
+.item-img{
+    width: 100%;
+    height: 150px;
+}
+
+
+.bg-dark .header{
+    background-color: #202C36;
+}
+.bg-dark .title{
+    color: #fff;
+}
+.bg-dark .title5{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.bg-dark .item{
+    background-color: #202C36;
+}
+.bg-dark .item-title{
+    color: #fff;
+}
+.bg-dark .form-control{
+    background-color: #202C36;
+    color: #fff;
+}
+.bg-dark .form-select{
+    background-color: #202C36;
+    color: #fff;
+}
+.bg-dark .btn{
+    background-color: #202C36;
+    color: #fff;
+}
+
+.text5{
+    margin-bottom: 50px;
+}
+
+.bg-dark .search::placeholder{
+    color: #fff;
+}
+.bg-dark .oy-path{
+    fill: #fff;
+    stroke: #fff;
+}
+
+
+
+
+
+ 
+
+
+
+@media only screen and (max-width: 376px) {
+    .title5{
+        font-size: 14px;
+    }
+
+    .col-12{
+        align-items: center;
+    }
+
+    .site-form{
+        display: block;
+    }
+
+    .item{
+        margin: 0;
+        margin: 0 auto;
+    }
+
+    .item:nth-child(4){
+        margin: 0 auto;
+    }
+
+    .item:nth-child(8){
+        margin: 0 auto;
+    }
+
+    .site-form{
+        flex-direction: column;
+    }
+    .w-25{
+        width: 100% !important;
+    }
+
+    .form-select{
+        width: 100%;
+        max-width: 200px;
+    }
+}
