@@ -1,6 +1,3 @@
-*{
-    transition: all ease 0.5s;
-}
 body{
     margin: 0;
     padding: 0;
@@ -20,6 +17,11 @@ body{
 
 .color-white{
     --btn-color : #fff;
+}
+
+a{
+    text-decoration: none;
+
 }
 
 .div{
@@ -89,8 +91,12 @@ header{
 .item-img{
     width: 100%;
     height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
-
+.box{
+    border-radius: 5px;
+}
 
 .bg-dark .header{
     background-color: #202C36;
@@ -133,8 +139,83 @@ header{
     fill: #fff;
     stroke: #fff;
 }
+.shape-svg{
+    fill: var(--text-color);
+}
+.bg-dark .shape-svg{
+    fill: var(--bg_color);
+}
+.back-link{
+    width: 136px;
+    height: 40px;
+    margin-top: 80px;
+    padding: 5px 35px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-);
+    background-color: var(--bg_color);
+    display: block;
+    justify-content: space-between;
+}
+.bg-dark .back-link{
+    color: var(--bg_color);
+    background-color: var(--main_color);
+}
+.belgium{
+    margin-top: 80px;
+}
 
-
+.about-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.about-img{
+    border-radius: 5px;
+}
+.box-link{
+    text-decoration: none;
+    color: black;
+    background-color: var(--bg_color);
+}
+.box-link:hover{
+    color: #000;
+}
+.bg-dark .box-link{
+    color: var(--bg_color);
+    background-color: var(--main_color);
+} 
+/* .box{
+    color: black;
+    background-color: var(--bg_color);
+}
+.dark .box{
+    color: var(--bg_color);
+    background-color: var(--main_color);
+}  
+.text-box{
+    color: var(--text-color);
+    background-color: var(--bg_color);
+}
+.bg-dark .text-box{
+    color: var(--bg_color);
+    background-color: var(--main_color);
+} */
+.Belgium-text{
+    color: var(--text-color);
+}
+.bg-dark .Belgium-text{
+    color: var(--bg_color);
+}
+.about-list{
+    color: var(--text-color);
+}
+.bg-dark .about-list{
+    color: var(--bg_color);
+}
+.bg-dark .about-box{
+    color: var(--bg_color);
+}
 
 
 
@@ -174,9 +255,42 @@ header{
     .w-25{
         width: 100% !important;
     }
-
     .form-select{
         width: 100%;
         max-width: 200px;
+    }
+    .belgium{
+        display: block;
+    }
+    .belgium-top-list{
+        width: 100%;
+        margin: 0;
+    }
+    .belgium-bttm-list{
+        width: 100%;
+        margin: 0;
+    }
+    .belgium-info{
+        width: 100%;
+        display: block;
+    }
+    .about-img{
+        width: 350px;
+        height: 275px;
+    }
+    .belgium-bottom-box{
+        display: flex;
+        padding: 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .about-box{
+        width: 100%;
+        margin: 0;
+    }
+    .about-link{
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 0;
     }
 }
